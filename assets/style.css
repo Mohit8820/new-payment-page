@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+button {
+  border: none;
+  background: none;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.4rem 0 5.325rem;
+}
+
+header img {
+  width: 20rem;
+  height: auto;
+}
+main {
+  padding: 0 13.4%;
+  text-align: left;
+}
+h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #800080;
+}
+.line {
+  content: "";
+  width: 100%;
+  height: 0.1rem;
+  border: 0.5px dashed #cbcbcb;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  margin-top: 0.9rem;
+  margin-bottom: 3.5rem;
+}
+.grid {
+  padding: 0 4.652%;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.course {
+  display: flex;
+  justify-content: space-between;
+  width: 35rem;
+}
+.course h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #800080;
+}
+.course p {
+  font-weight: 300;
+  line-height: 2rem;
+  color: #807d7d;
+}
+.course span {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: rgba(128, 0, 128, 0.75);
+}
+.coupon-input button {
+  font-weight: 500;
+  line-height: 2rem;
+  color: #800080;
+  font-size: 1.4rem;
+}
+.coupon-input input {
+  border: none;
+  width: 24.3rem;
+  border-bottom: #d9d9d9 solid 0.1rem;
+  margin-top: 5.6rem;
+  margin-bottom: 3.1rem;
+  font-size: 1.4rem;
+}
+::placeholder {
+  color: #c7c7c7;
+  font-family: "Poppins", sans-serif;
+}
+
+.applied {
+  background: #ffffff;
+  box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 1.8rem;
+  width: 35rem;
+}
+.rotated-tag {
+  width: 4.5rem;
+  background: #800080;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.applied span {
+  transform: rotate(-90deg);
+}
+.applied h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  margin-bottom: 0.7rem;
+}
+.applied div:nth-child(2) {
+  padding: 1.4rem 1.7rem 1.1rem 0rem;
+}
+.applied div:nth-child(2) span {
+  font-weight: 500;
+  line-height: 2.1;
+  color: #f31616;
+  margin-top: 0.7rem;
+  margin-bottom: 1.4rem;
+}
+.applied div:nth-child(2) p {
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #9c9c9c;
+  margin-top: 1.7rem;
+}
+
+.bill {
+  background: #ffffff;
+  box-shadow: 0px 0px 1.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  padding: 3.6rem 4rem;
+  width: 42.8rem;
+}
+table {
+  width: 100%;
+}
+th {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #707070;
+}
+td {
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: #5e5e5e;
+}
+tr td:nth-child(2),
+tr th:nth-child(2) {
+  text-align: right;
+}
+.bill .line {
+  border-color: #d9d9d9;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.total {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  display: flex;
+  justify-content: space-between;
+  color: #800080;
+  margin-bottom: 2.5rem;
+}
+.bill button {
+  width: 100%;
+  height: 4.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #800080;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #ffffff;
+}
+footer {
+  max-height: 7.17rem;
+  min-height: 7.17rem;
+  background: #f5ebf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.23%;
+}
+footer div img {
+  height: 3.2rem;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1050px) {
+  html {
+    font-size: 47%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 32%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 52.5%;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+  footer {
+    height: 6.6rem;
+  }
+  footer div img {
+    height: 2.5rem;
+  }
+  main {
+    padding: 0 9.11%;
+  }
+  .line:not(.bill .line) {
+    display: none;
+  }
+  .grid {
+    padding: 0;
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+  .course {
+    width: 100%;
+  }
+  .coupon-input input {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .applied {
+    width: 100%;
+  }
+  .bill {
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+  footer {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 470px) {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    gap: 3.5rem;
+  }
+}
+@media (max-width: 430px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 390px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 47%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+}
